@@ -1,7 +1,7 @@
 require('rspec')
 require('pry')
 
-require('scrabble')
+require('./lib/scrabble')
 
 describe("it will give scores for words") do
   it ("returns a scrabble score for a letter") do
