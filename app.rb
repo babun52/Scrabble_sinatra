@@ -5,7 +5,7 @@ get('/') do
   erb(:index)
 end
 
-get('/title') do
-  @title = params.fetch('title').scrabble()
-  erb(:title)
+get('/word_form') do
+  @score = params.fetch('word_input').scrabble()
+  erb(:word)
 end
